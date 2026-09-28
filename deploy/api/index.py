@@ -258,19 +258,25 @@ def download_batch_file(job_id: str, file_type: str):
     raise HTTPException(status_code=400, detail="Invalid file type")
 
 # Direct Static & HTML Fallback Handlers (Guarantees zero 404s)
-PUBLIC_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "public")
+BASE_DIR = os.path.dirname(__file__)
 
 @app.get("/")
 def serve_index():
-    index_path = os.path.join(PUBLIC_DIR, "index.html")
-    if os.path.exists(index_path):
-        return FileResponse(index_path, media_type="text/html")
+    for candidate in [
+        os.path.join(BASE_DIR, "index.html"),
+        os.path.join(os.path.dirname(BASE_DIR), "public", "index.html")
+    ]:
+        if os.path.exists(candidate):
+            return FileResponse(candidate, media_type="text/html")
     return PlainTextResponse("RESOLVIX Engine Online", status_code=200)
 
 @app.get("/app.js")
 def serve_js():
-    js_path = os.path.join(PUBLIC_DIR, "app.js")
-    if os.path.exists(js_path):
-        return FileResponse(js_path, media_type="application/javascript")
+    for candidate in [
+        os.path.join(BASE_DIR, "app.js"),
+        os.path.join(os.path.dirname(BASE_DIR), "public", "app.js")
+    ]:
+        if os.path.exists(candidate):
+            return FileResponse(candidate, media_type="application/javascript")
     return PlainTextResponse("// missing", status_code=404)
 

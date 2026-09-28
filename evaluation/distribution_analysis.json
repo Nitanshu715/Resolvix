@@ -1,0 +1,67 @@
+{
+  "train_s1": {
+    "total": 2206821,
+    "by_country": {
+      "US": 1323633,
+      "India": 883188
+    },
+    "proportions": {
+      "US": 0.5997917366202333,
+      "India": 0.4002082633797666
+    }
+  },
+  "hidden_test_s1": {
+    "total": 5000,
+    "by_country": {
+      "US": 3000,
+      "India": 2000
+    },
+    "proportions": {
+      "US": 0.6,
+      "India": 0.4
+    }
+  },
+  "dev_s1": {
+    "total": 5000,
+    "by_country": {
+      "US": 3000,
+      "India": 2000
+    },
+    "proportions": {
+      "US": 0.6,
+      "India": 0.4
+    }
+  },
+  "amazon_test_s1": {
+    "total": 1732544,
+    "by_country": {
+      "US": 663106,
+      "France": 259452,
+      "India": 809986
+    },
+    "proportions": {
+      "US": 0.3827354456798788,
+      "France": 0.14975204092940786,
+      "India": 0.4675125133907133
+    }
+  },
+  "distribution_shift_flags": {
+    "unseen_country_in_test": true,
+    "unseen_country_count": 259452,
+    "unseen_country_pct": 0.14975204092940786,
+    "india_shift": {
+      "train_pct": 0.4002082633797666,
+      "test_pct": 0.4675125133907133
+    }
+  },
+  "current_submission_diagnostics": {
+    "matching_results_total_rows": 1732544,
+    "matching_results_total_empty": 876495,
+    "matching_results_empty_pct": 0.5059005716449337,
+    "by_country_empty_pct": {
+      "US": 0.06359616712863403,
+      "France": 0.09380540523873394,
+      "India": 1.0
+    }
+  }
+}

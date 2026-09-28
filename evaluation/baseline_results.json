@@ -1,0 +1,114 @@
+{
+  "Baseline A (All Singletons)": {
+    "n_entities": 5000,
+    "macro_f05": 0.0516,
+    "macro_precision": 0.0516,
+    "macro_recall": 1.0,
+    "singleton_accuracy": 0.0516,
+    "singleton_total": 5000,
+    "singleton_correct": 258,
+    "tp_links": 0,
+    "fp_links": 17315,
+    "fn_links": 0,
+    "score_distribution": {
+      "1.0": 0.0516,
+      "0.75-1.0": 0.0,
+      "0.50-0.75": 0.0,
+      "0.25-0.50": 0.0,
+      "0.0-0.25": 0.0,
+      "0.0": 0.9484
+    },
+    "score_counts": {
+      "1.0": 258,
+      "0.75-1.0": 0,
+      "0.50-0.75": 0,
+      "0.25-0.50": 0,
+      "0.0-0.25": 0,
+      "0.0": 4742
+    }
+  },
+  "Baseline B (Exact Normalized Name)": {
+    "n_entities": 5000,
+    "macro_f05": 0.1796331686480419,
+    "macro_precision": 0.18820603174603176,
+    "macro_recall": 0.6959982763663897,
+    "singleton_accuracy": 0.08200562324273665,
+    "singleton_total": 2134,
+    "singleton_correct": 175,
+    "tp_links": 2841,
+    "fp_links": 14474,
+    "fn_links": 19135,
+    "score_distribution": {
+      "1.0": 0.0454,
+      "0.75-1.0": 0.01,
+      "0.50-0.75": 0.077,
+      "0.25-0.50": 0.1618,
+      "0.0-0.25": 0.1242,
+      "0.0": 0.5816
+    },
+    "score_counts": {
+      "1.0": 227,
+      "0.75-1.0": 50,
+      "0.50-0.75": 385,
+      "0.25-0.50": 809,
+      "0.0-0.25": 621,
+      "0.0": 2908
+    }
+  },
+  "Baseline C (Simple Fuzzy >= 80)": {
+    "n_entities": 5000,
+    "macro_f05": 0.6579294091467073,
+    "macro_precision": 0.6529409090909091,
+    "macro_recall": 0.8465663389428096,
+    "singleton_accuracy": 0.3394308943089431,
+    "singleton_total": 492,
+    "singleton_correct": 167,
+    "tp_links": 11288,
+    "fp_links": 6027,
+    "fn_links": 2500,
+    "score_distribution": {
+      "1.0": 0.2416,
+      "0.75-1.0": 0.2488,
+      "0.50-0.75": 0.2442,
+      "0.25-0.50": 0.1256,
+      "0.0-0.25": 0.0226,
+      "0.0": 0.1172
+    },
+    "score_counts": {
+      "1.0": 1208,
+      "0.75-1.0": 1244,
+      "0.50-0.75": 1221,
+      "0.25-0.50": 628,
+      "0.0-0.25": 113,
+      "0.0": 586
+    }
+  },
+  "Baseline D (Current Frozen Pipeline)": {
+    "n_entities": 5000,
+    "macro_f05": 0.6852634381138156,
+    "macro_precision": 0.6947831313131313,
+    "macro_recall": 0.8004463041716312,
+    "singleton_accuracy": 0.3868421052631579,
+    "singleton_total": 380,
+    "singleton_correct": 147,
+    "tp_links": 12134,
+    "fp_links": 5181,
+    "fn_links": 4131,
+    "score_distribution": {
+      "1.0": 0.2476,
+      "0.75-1.0": 0.2954,
+      "0.50-0.75": 0.2192,
+      "0.25-0.50": 0.1116,
+      "0.0-0.25": 0.0198,
+      "0.0": 0.1064
+    },
+    "score_counts": {
+      "1.0": 1238,
+      "0.75-1.0": 1477,
+      "0.50-0.75": 1096,
+      "0.25-0.50": 558,
+      "0.0-0.25": 99,
+      "0.0": 532
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "all_passed": true,
+  "tests": [
+    {
+      "test_name": "Perfect match (single)",
+      "v1_score": 1.0,
+      "v2_score": 1.0,
+      "expected": 1.0,
+      "passed": true
+    },
+    {
+      "test_name": "Perfect match (multiple)",
+      "v1_score": 1.0,
+      "v2_score": 1.0,
+      "expected": 1.0,
+      "passed": true
+    },
+    {
+      "test_name": "Correct singleton (both empty)",
+      "v1_score": 1.0,
+      "v2_score": 1.0,
+      "expected": 1.0,
+      "passed": true
+    },
+    {
+      "test_name": "False positive singleton (truth empty, predicted non-empty)",
+      "v1_score": 0.0,
+      "v2_score": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "test_name": "False negative (truth non-empty, predicted empty)",
+      "v1_score": 0.0,
+      "v2_score": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "test_name": "Partial match: 1 TP, 1 FP (truth: {S2-1}, pred: {S2-1, S2-2})",
+      "v1_score": 0.5555555555555556,
+      "v2_score": 0.5555555555555556,
+      "expected": 0.5555555555555556,
+      "passed": true
+    },
+    {
+      "test_name": "Partial match: 1 TP, 1 FN (truth: {S2-1, S3-1}, pred: {S2-1})",
+      "v1_score": 0.8333333333333334,
+      "v2_score": 0.8333333333333334,
+      "expected": 0.8333333333333334,
+      "passed": true
+    },
+    {
+      "test_name": "Partial match: 2 TP, 1 FP, 1 FN (truth: {A, B, C}, pred: {A, B, D})",
+      "v1_score": 0.6666666666666666,
+      "v2_score": 0.6666666666666666,
+      "expected": 0.6666666666666666,
+      "passed": true
+    }
+  ]
+}

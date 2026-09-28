@@ -1,0 +1,28 @@
+# Large datasets and submission dumps (Do not commit to GitHub)
+*.tsv
+*.csv
+*.zip
+*.tar.gz
+*.parquet
+*.jsonl
+student_resource/
+__MACOSX/
+
+# Virtual Environments & Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.env.*
+env/
+venv/
+.venv/
+
+# Vercel Deployment Artifacts
+.vercel/
+
+# OS and IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

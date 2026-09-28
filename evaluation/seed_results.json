@@ -1,0 +1,88 @@
+{
+  "Seed_42": {
+    "n_entities": 5000,
+    "us_entities": 3000,
+    "india_entities": 2000,
+    "singleton_count": 258,
+    "singleton_rate": 0.0516,
+    "mean_links_per_entity": 3.463,
+    "std_links_per_entity": 1.6987077799387171,
+    "s1_id_sample": [
+      "S1-644746405",
+      "S1-689718728",
+      "S1-39105767",
+      "S1-528092663",
+      "S1-41062807"
+    ]
+  },
+  "Seed_137": {
+    "n_entities": 5000,
+    "us_entities": 3000,
+    "india_entities": 2000,
+    "singleton_count": 274,
+    "singleton_rate": 0.0548,
+    "mean_links_per_entity": 3.4858,
+    "std_links_per_entity": 1.6959875101919075,
+    "s1_id_sample": [
+      "S1-574040398",
+      "S1-165428608",
+      "S1-641689812",
+      "S1-729097314",
+      "S1-776922474"
+    ]
+  },
+  "Seed_2026": {
+    "n_entities": 5000,
+    "us_entities": 3000,
+    "india_entities": 2000,
+    "singleton_count": 280,
+    "singleton_rate": 0.056,
+    "mean_links_per_entity": 3.4606,
+    "std_links_per_entity": 1.716227469581311,
+    "s1_id_sample": [
+      "S1-751094283",
+      "S1-653089632",
+      "S1-837698616",
+      "S1-170416656",
+      "S1-979918694"
+    ]
+  },
+  "Seed_777": {
+    "n_entities": 5000,
+    "us_entities": 3000,
+    "india_entities": 2000,
+    "singleton_count": 281,
+    "singleton_rate": 0.0562,
+    "mean_links_per_entity": 3.4494,
+    "std_links_per_entity": 1.7035316386873482,
+    "s1_id_sample": [
+      "S1-572412570",
+      "S1-536977892",
+      "S1-962559793",
+      "S1-140336204",
+      "S1-487766754"
+    ]
+  },
+  "Seed_9999": {
+    "n_entities": 5000,
+    "us_entities": 3000,
+    "india_entities": 2000,
+    "singleton_count": 310,
+    "singleton_rate": 0.062,
+    "mean_links_per_entity": 3.4458,
+    "std_links_per_entity": 1.7244294973753738,
+    "s1_id_sample": [
+      "S1-317404379",
+      "S1-741960990",
+      "S1-567246427",
+      "S1-153908901",
+      "S1-617857042"
+    ]
+  },
+  "stability_summary": {
+    "mean_singleton_rate": 0.05611999999999999,
+    "std_singleton_rate": 0.0033695103501844297,
+    "min_singleton_rate": 0.0516,
+    "max_singleton_rate": 0.062
+  }
+}
